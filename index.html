@@ -4,174 +4,252 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Influencer Conversion Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="min-h-screen bg-slate-950 text-slate-100">
+  <body class="min-h-screen bg-gradient-to-br from-sky-50 via-cyan-50 to-emerald-50 font-['Plus_Jakarta_Sans'] text-slate-800">
     <div class="absolute inset-0 -z-10 overflow-hidden">
       <div class="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-cyan-500/20 blur-3xl"></div>
       <div class="absolute top-32 right-0 h-80 w-80 rounded-full bg-amber-500/20 blur-3xl"></div>
       <div class="absolute bottom-0 left-1/3 h-96 w-96 rounded-full bg-emerald-500/15 blur-3xl"></div>
     </div>
 
-    <header class="border-b border-slate-800/80 bg-slate-900/70 backdrop-blur">
+    <header class="border-b border-slate-200 bg-white/80 backdrop-blur">
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Influencer Business Overview</p>
-          <h1 class="text-2xl font-bold tracking-tight text-white sm:text-3xl">Social Media Conversion Dashboard</h1>
-          <p class="mt-1 text-sm text-slate-300">Sample data consolidated across Instagram, TikTok, and YouTube</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Influencer Business Overview</p>
+          <h1 class="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">Social Media Conversion Dashboard</h1>
+          <p class="mt-1 text-sm text-slate-600">Sample data consolidated across Instagram, TikTok, and YouTube</p>
         </div>
         <nav aria-label="Primary" class="flex flex-wrap gap-2 text-xs font-medium sm:text-sm">
-          <a href="#kpis" class="rounded-full border border-cyan-400/40 bg-cyan-500/20 px-4 py-2 text-cyan-100 transition hover:bg-cyan-500/30">KPIs</a>
-          <a href="#drivers" class="rounded-full border border-amber-400/40 bg-amber-500/20 px-4 py-2 text-amber-100 transition hover:bg-amber-500/30">Drivers</a>
-          <a href="#operations" class="rounded-full border border-emerald-400/40 bg-emerald-500/20 px-4 py-2 text-emerald-100 transition hover:bg-emerald-500/30">Operational Details</a>
+          <a href="#kpis" class="rounded-full border border-cyan-200 bg-cyan-100 px-4 py-2 text-cyan-700 transition hover:bg-cyan-200">KPIs</a>
+          <a href="#drivers" class="rounded-full border border-amber-200 bg-amber-100 px-4 py-2 text-amber-700 transition hover:bg-amber-200">Drivers</a>
+          <a href="#operations" class="rounded-full border border-emerald-200 bg-emerald-100 px-4 py-2 text-emerald-700 transition hover:bg-emerald-200">Operational Details</a>
         </nav>
       </div>
     </header>
 
-    <main class="mx-auto max-w-7xl space-y-8 px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
+    <main class="mx-auto max-w-7xl space-y-8 px-4 py-6 pb-28 sm:px-6 lg:px-8 lg:py-8 lg:pb-8">
+      <section aria-label="Executive summary" class="grid grid-cols-1 gap-4 lg:grid-cols-3">
+        <article class="rounded-3xl border border-cyan-100 bg-white/90 p-6 shadow-lg shadow-cyan-100 lg:col-span-2">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Executive Summary</p>
+          <h2 class="mt-2 text-2xl font-extrabold tracking-tight text-slate-900 sm:text-3xl">Track Revenue, Creative Performance, and Conversion Momentum in One View</h2>
+          <p class="mt-3 max-w-2xl text-sm leading-6 text-slate-600">This command center combines campaign performance from Instagram, TikTok, and YouTube into one sleek reporting layer so brand decisions can be made quickly, confidently, and with clean context.</p>
+          <div class="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">
+              <p class="text-xs text-slate-500">Monthly Revenue</p>
+              <p class="mt-1 text-xl font-bold text-slate-900">$22.6K</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">
+              <p class="text-xs text-slate-500">Total Reach</p>
+              <p class="mt-1 text-xl font-bold text-slate-900">452K</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-3">
+              <p class="text-xs text-slate-500">Avg. Platform ROI</p>
+              <p class="mt-1 text-xl font-bold text-slate-900">4.1x</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="relative overflow-hidden rounded-3xl border border-slate-200 bg-white/90 p-3 shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=80"
+            alt="Creator planning social media campaign results"
+            class="h-64 w-full rounded-2xl object-cover"
+          />
+          <div class="absolute inset-x-6 bottom-6 rounded-xl bg-white/90 p-3 backdrop-blur">
+            <p class="text-xs font-semibold uppercase tracking-wide text-cyan-700">Creative Snapshot</p>
+            <p class="mt-1 text-sm font-semibold text-slate-900">Short-form creator content continues to drive the fastest conversion cycles.</p>
+          </div>
+        </article>
+      </section>
+
+      <section aria-label="Visual performance highlights" class="grid grid-cols-1 gap-4 md:grid-cols-3">
+        <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?auto=format&fit=crop&w=900&q=80"
+            alt="Instagram content creation workspace"
+            class="h-44 w-full object-cover"
+          />
+          <div class="p-4">
+            <p class="text-xs uppercase tracking-wide text-slate-500">Instagram</p>
+            <p class="mt-1 text-sm font-semibold text-slate-900">Best engagement quality and strongest creator-brand fit.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+          <img
+            src="https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=900"
+            alt="Mobile-first short video production setup"
+            class="h-44 w-full object-cover"
+          />
+          <div class="p-4">
+            <p class="text-xs uppercase tracking-wide text-slate-500">TikTok</p>
+            <p class="mt-1 text-sm font-semibold text-slate-900">Top reach engine with sustained click growth from video hooks.</p>
+          </div>
+        </article>
+        <article class="overflow-hidden rounded-2xl border border-slate-200 bg-white/90 shadow-sm">
+          <img
+            src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?auto=format&fit=crop&w=900&q=80"
+            alt="Long-form video recording and editing desk"
+            class="h-44 w-full object-cover"
+          />
+          <div class="p-4">
+            <p class="text-xs uppercase tracking-wide text-slate-500">YouTube</p>
+            <p class="mt-1 text-sm font-semibold text-slate-900">Higher intent audience that supports premium product conversions.</p>
+          </div>
+        </article>
+      </section>
+
       <section id="kpis" aria-labelledby="kpi-heading" class="space-y-4">
         <div class="flex items-end justify-between gap-3">
           <div>
-            <h2 id="kpi-heading" class="text-xl font-semibold text-white sm:text-2xl">Top Block: Main KPI Indicators</h2>
-            <p class="text-sm text-slate-300">Outcome metrics to answer revenue, conversion, efficiency, and retention questions fast.</p>
+            <h2 id="kpi-heading" class="text-xl font-semibold text-slate-900 sm:text-2xl">Top Block: Main KPI Indicators</h2>
+            <p class="text-sm text-slate-600">Outcome metrics to answer revenue, conversion, efficiency, and retention questions fast.</p>
           </div>
-          <span class="rounded-full border border-slate-700 bg-slate-900 px-3 py-1 text-xs text-slate-300">Last 30 days</span>
+          <div class="flex flex-wrap items-center gap-2">
+            <button type="button" data-kpi-range="30d" class="kpi-range-btn rounded-full border border-cyan-300 bg-cyan-100 px-3 py-1 text-xs font-medium text-cyan-700 transition hover:bg-cyan-200">30 days</button>
+            <button type="button" data-kpi-range="7d" class="kpi-range-btn rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition hover:bg-slate-100">7 days</button>
+            <button type="button" data-kpi-range="1d" class="kpi-range-btn rounded-full border border-slate-300 bg-white px-3 py-1 text-xs font-medium text-slate-600 transition hover:bg-slate-100">1 day</button>
+            <span id="kpi-range-label" class="rounded-full border border-slate-300 bg-white px-3 py-1 text-xs text-slate-600">Showing: Last 30 days</span>
+          </div>
         </div>
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 shadow-xl shadow-cyan-950/30">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Commission Revenue</p>
-            <p class="mt-2 text-3xl font-bold text-cyan-300">€3,390</p>
-            <p class="mt-2 text-xs text-emerald-300">+14% vs previous period</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 shadow-xl shadow-cyan-950/30">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Commission Revenue</p>
+            <p data-kpi-value="commissionRevenue" class="mt-2 text-3xl font-bold text-cyan-700">$3,390</p>
+            <p data-kpi-sub="commissionRevenue" class="mt-2 text-xs text-emerald-700">+14% vs previous period</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 shadow-xl shadow-amber-950/30">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Total Sales</p>
-            <p class="mt-2 text-3xl font-bold text-amber-300">273</p>
-            <p class="mt-2 text-xs text-slate-300">A: 120 | B: 88 | C: 65</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 shadow-xl shadow-amber-950/30">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Total Sales</p>
+            <p data-kpi-value="totalSales" class="mt-2 text-3xl font-bold text-amber-700">273</p>
+            <p data-kpi-sub="totalSales" class="mt-2 text-xs text-slate-600">A: 120 | B: 88 | C: 65</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 shadow-xl shadow-emerald-950/30">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Conversion Rate</p>
-            <p class="mt-2 text-3xl font-bold text-emerald-300">2.6%</p>
-            <p class="mt-2 text-xs text-slate-300">Conversions / Reach</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 shadow-xl shadow-emerald-950/30">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Conversion Rate</p>
+            <p data-kpi-value="conversionRate" class="mt-2 text-3xl font-bold text-emerald-700">2.6%</p>
+            <p data-kpi-sub="conversionRate" class="mt-2 text-xs text-slate-600">Conversions / Reach</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Overall ROI</p>
-            <p class="mt-2 text-3xl font-bold text-white">4.1x</p>
-            <p class="mt-2 text-xs text-slate-300">Revenue €22,600 / Cost €5,470</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Overall ROI</p>
+            <p data-kpi-value="overallRoi" class="mt-2 text-3xl font-bold text-slate-900">4.1x</p>
+            <p data-kpi-sub="overallRoi" class="mt-2 text-xs text-slate-600">Revenue $22,600 / Cost $5,470</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Engagement Rate</p>
-            <p class="mt-2 text-3xl font-bold text-white">8.9%</p>
-            <p class="mt-2 text-xs text-slate-300">Likes + comments + shares / reach</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Engagement Rate</p>
+            <p data-kpi-value="engagementRate" class="mt-2 text-3xl font-bold text-slate-900">8.9%</p>
+            <p data-kpi-sub="engagementRate" class="mt-2 text-xs text-slate-600">Likes + comments + shares / reach</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Click-Through Rate</p>
-            <p class="mt-2 text-3xl font-bold text-white">3.7%</p>
-            <p class="mt-2 text-xs text-slate-300">Strong on short-form videos</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Click-Through Rate</p>
+            <p data-kpi-value="ctr" class="mt-2 text-3xl font-bold text-slate-900">3.7%</p>
+            <p data-kpi-sub="ctr" class="mt-2 text-xs text-slate-600">Strong on short-form videos</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Funnel Completion</p>
-            <p class="mt-2 text-3xl font-bold text-white">61%</p>
-            <p class="mt-2 text-xs text-slate-300">Click to checkout completion rate</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Funnel Completion</p>
+            <p data-kpi-value="funnelCompletion" class="mt-2 text-3xl font-bold text-slate-900">61%</p>
+            <p data-kpi-sub="funnelCompletion" class="mt-2 text-xs text-slate-600">Click to checkout completion rate</p>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <p class="text-xs uppercase tracking-wider text-slate-400">Cost per Conversion</p>
-            <p class="mt-2 text-3xl font-bold text-white">€20.04</p>
-            <p class="mt-2 text-xs text-slate-300">Efficiency benchmark stable</p>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <p class="text-xs uppercase tracking-wider text-slate-500">Cost per Conversion</p>
+            <p data-kpi-value="costPerConversion" class="mt-2 text-3xl font-bold text-slate-900">$20.04</p>
+            <p data-kpi-sub="costPerConversion" class="mt-2 text-xs text-slate-600">Efficiency benchmark stable</p>
           </article>
         </div>
       </section>
 
       <section id="drivers" aria-labelledby="drivers-heading" class="space-y-4">
         <div>
-          <h2 id="drivers-heading" class="text-xl font-semibold text-white sm:text-2xl">Middle Block: Drivers</h2>
-          <p class="text-sm text-slate-300">Factors that explain KPI movement by funnel stage, platform, product, and activity.</p>
+          <h2 id="drivers-heading" class="text-xl font-semibold text-slate-900 sm:text-2xl">Middle Block: Drivers</h2>
+          <p class="text-sm text-slate-600">Factors that explain KPI movement by funnel stage, platform, product, and activity.</p>
         </div>
 
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 lg:col-span-1">
-            <h3 class="text-sm font-semibold text-cyan-200">Conversion Funnel</h3>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-cyan-700">Conversion Funnel</h3>
             <ul class="mt-4 space-y-3 text-sm">
               <li>
-                <div class="flex items-center justify-between"><span class="text-slate-300">Reach</span><span class="font-medium text-white">452,000</span></div>
-                <div class="mt-1 h-2 rounded bg-slate-800"><div class="h-2 w-full rounded bg-cyan-400"></div></div>
+                <div class="flex items-center justify-between"><span class="text-slate-600">Reach</span><span class="font-medium text-slate-900">452,000</span></div>
+                <div class="mt-1 h-2 rounded bg-slate-200"><div class="h-2 w-full rounded bg-cyan-500"></div></div>
               </li>
               <li>
-                <div class="flex items-center justify-between"><span class="text-slate-300">Clicks</span><span class="font-medium text-white">16,724</span></div>
-                <div class="mt-1 h-2 rounded bg-slate-800"><div class="h-2 w-1/2 rounded bg-cyan-400"></div></div>
+                <div class="flex items-center justify-between"><span class="text-slate-600">Clicks</span><span class="font-medium text-slate-900">16,724</span></div>
+                <div class="mt-1 h-2 rounded bg-slate-200"><div class="h-2 w-1/2 rounded bg-cyan-500"></div></div>
               </li>
               <li>
-                <div class="flex items-center justify-between"><span class="text-slate-300">Checkouts</span><span class="font-medium text-white">4,108</span></div>
-                <div class="mt-1 h-2 rounded bg-slate-800"><div class="h-2 w-1/3 rounded bg-cyan-400"></div></div>
+                <div class="flex items-center justify-between"><span class="text-slate-600">Checkouts</span><span class="font-medium text-slate-900">4,108</span></div>
+                <div class="mt-1 h-2 rounded bg-slate-200"><div class="h-2 w-1/3 rounded bg-cyan-500"></div></div>
               </li>
               <li>
-                <div class="flex items-center justify-between"><span class="text-slate-300">Conversions</span><span class="font-medium text-white">273</span></div>
-                <div class="mt-1 h-2 rounded bg-slate-800"><div class="h-2 w-1/6 rounded bg-cyan-400"></div></div>
+                <div class="flex items-center justify-between"><span class="text-slate-600">Conversions</span><span class="font-medium text-slate-900">273</span></div>
+                <div class="mt-1 h-2 rounded bg-slate-200"><div class="h-2 w-1/6 rounded bg-cyan-500"></div></div>
               </li>
             </ul>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 lg:col-span-1">
-            <h3 class="text-sm font-semibold text-amber-200">Platform Performance</h3>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-amber-700">Platform Performance</h3>
             <div class="mt-4 space-y-3 text-sm">
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <p class="font-medium text-white">Instagram</p>
-                <p class="text-slate-300">ROI 4.4x | Conv. 2.9% | Engagement 10.2%</p>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3">
+                <p class="font-medium text-slate-900">Instagram</p>
+                <p class="text-slate-600">ROI 4.4x | Conv. 2.9% | Engagement 10.2%</p>
               </div>
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <p class="font-medium text-white">TikTok</p>
-                <p class="text-slate-300">ROI 3.8x | Conv. 2.4% | Engagement 9.8%</p>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3">
+                <p class="font-medium text-slate-900">TikTok</p>
+                <p class="text-slate-600">ROI 3.8x | Conv. 2.4% | Engagement 9.8%</p>
               </div>
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <p class="font-medium text-white">YouTube</p>
-                <p class="text-slate-300">ROI 4.1x | Conv. 2.1% | Engagement 6.5%</p>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3">
+                <p class="font-medium text-slate-900">YouTube</p>
+                <p class="text-slate-600">ROI 4.1x | Conv. 2.1% | Engagement 6.5%</p>
               </div>
             </div>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4 lg:col-span-1">
-            <h3 class="text-sm font-semibold text-emerald-200">Product Performance</h3>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4 lg:col-span-1">
+            <h3 class="text-sm font-semibold text-emerald-700">Product Performance</h3>
             <div class="mt-4 space-y-3 text-sm">
-              <div class="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <span class="text-slate-300">Product A (€50)</span>
-                <span class="font-semibold text-white">€900 commission</span>
+              <div class="flex items-center justify-between rounded-xl border border-slate-200 bg-white/75 p-3">
+                <span class="text-slate-600">Product A ($50)</span>
+                <span class="font-semibold text-slate-900">$900 commission</span>
               </div>
-              <div class="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <span class="text-slate-300">Product B (€120)</span>
-                <span class="font-semibold text-white">€1,584 commission</span>
+              <div class="flex items-center justify-between rounded-xl border border-slate-200 bg-white/75 p-3">
+                <span class="text-slate-600">Product B ($120)</span>
+                <span class="font-semibold text-slate-900">$1,584 commission</span>
               </div>
-              <div class="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-950/60 p-3">
-                <span class="text-slate-300">Product C (€80)</span>
-                <span class="font-semibold text-white">€780 commission</span>
+              <div class="flex items-center justify-between rounded-xl border border-slate-200 bg-white/75 p-3">
+                <span class="text-slate-600">Product C ($80)</span>
+                <span class="font-semibold text-slate-900">$780 commission</span>
               </div>
             </div>
           </article>
         </div>
 
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <h3 class="text-sm font-semibold text-white">Activity by Platform</h3>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <h3 class="text-sm font-semibold text-slate-900">Activity by Platform</h3>
             <dl class="mt-3 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3"><dt class="text-slate-400">Instagram Posts</dt><dd class="mt-1 text-lg font-bold text-white">24</dd></div>
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3"><dt class="text-slate-400">Stories</dt><dd class="mt-1 text-lg font-bold text-white">68</dd></div>
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3"><dt class="text-slate-400">TikTok Videos</dt><dd class="mt-1 text-lg font-bold text-white">19</dd></div>
-              <div class="rounded-xl border border-slate-800 bg-slate-950/60 p-3"><dt class="text-slate-400">YouTube Videos</dt><dd class="mt-1 text-lg font-bold text-white">8</dd></div>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3"><dt class="text-slate-500">Instagram Posts</dt><dd class="mt-1 text-lg font-bold text-slate-900">24</dd></div>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3"><dt class="text-slate-500">Stories</dt><dd class="mt-1 text-lg font-bold text-slate-900">68</dd></div>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3"><dt class="text-slate-500">TikTok Videos</dt><dd class="mt-1 text-lg font-bold text-slate-900">19</dd></div>
+              <div class="rounded-xl border border-slate-200 bg-white/75 p-3"><dt class="text-slate-500">YouTube Videos</dt><dd class="mt-1 text-lg font-bold text-slate-900">8</dd></div>
             </dl>
           </article>
 
-          <article class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <h3 class="text-sm font-semibold text-white">Engagement by Platform</h3>
+          <article class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <h3 class="text-sm font-semibold text-slate-900">Engagement by Platform</h3>
             <ul class="mt-3 space-y-2 text-sm">
-              <li class="flex items-center justify-between rounded-lg border border-slate-800 bg-slate-950/60 p-3"><span class="text-slate-300">Instagram</span><span class="font-semibold text-white">42,300 interactions</span></li>
-              <li class="flex items-center justify-between rounded-lg border border-slate-800 bg-slate-950/60 p-3"><span class="text-slate-300">TikTok</span><span class="font-semibold text-white">38,450 interactions</span></li>
-              <li class="flex items-center justify-between rounded-lg border border-slate-800 bg-slate-950/60 p-3"><span class="text-slate-300">YouTube</span><span class="font-semibold text-white">16,980 interactions</span></li>
+              <li class="flex items-center justify-between rounded-lg border border-slate-200 bg-white/75 p-3"><span class="text-slate-600">Instagram</span><span class="font-semibold text-slate-900">42,300 interactions</span></li>
+              <li class="flex items-center justify-between rounded-lg border border-slate-200 bg-white/75 p-3"><span class="text-slate-600">TikTok</span><span class="font-semibold text-slate-900">38,450 interactions</span></li>
+              <li class="flex items-center justify-between rounded-lg border border-slate-200 bg-white/75 p-3"><span class="text-slate-600">YouTube</span><span class="font-semibold text-slate-900">16,980 interactions</span></li>
             </ul>
           </article>
         </div>
@@ -179,14 +257,14 @@
 
       <section id="operations" aria-labelledby="operations-heading" class="space-y-4">
         <div>
-          <h2 id="operations-heading" class="text-xl font-semibold text-white sm:text-2xl">Bottom Block: Operational Details</h2>
-          <p class="text-sm text-slate-300">Detailed tables, anomalies, and lists to monitor execution quality and opportunities.</p>
+          <h2 id="operations-heading" class="text-xl font-semibold text-slate-900 sm:text-2xl">Bottom Block: Operational Details</h2>
+          <p class="text-sm text-slate-600">Detailed tables, anomalies, and lists to monitor execution quality and opportunities.</p>
         </div>
 
-        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70">
-          <h3 class="border-b border-slate-800 px-4 py-3 text-sm font-semibold text-white sm:px-5">Products Table</h3>
+        <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white/85 shadow-sm">
+          <h3 class="border-b border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 sm:px-5">Products Table</h3>
           <table class="min-w-full text-left text-sm">
-            <thead class="bg-slate-950/60 text-slate-300">
+            <thead class="bg-slate-100/80 text-slate-600">
               <tr>
                 <th class="px-4 py-3 sm:px-5">Product</th>
                 <th class="px-4 py-3 sm:px-5">Price</th>
@@ -197,38 +275,38 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-product="A">
                 <td class="px-4 py-3 sm:px-5">Product A</td>
-                <td class="px-4 py-3 sm:px-5">€50</td>
+                <td class="px-4 py-3 sm:px-5">$50</td>
                 <td class="px-4 py-3 sm:px-5">120</td>
-                <td class="px-4 py-3 sm:px-5">€6,000</td>
-                <td class="px-4 py-3 sm:px-5">€900</td>
-                <td class="px-4 py-3 sm:px-5 text-emerald-300">3.9x</td>
+                <td class="px-4 py-3 sm:px-5">$6,000</td>
+                <td class="px-4 py-3 sm:px-5">$900</td>
+                <td class="px-4 py-3 sm:px-5 text-emerald-700">3.9x</td>
               </tr>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-product="B">
                 <td class="px-4 py-3 sm:px-5">Product B</td>
-                <td class="px-4 py-3 sm:px-5">€120</td>
+                <td class="px-4 py-3 sm:px-5">$120</td>
                 <td class="px-4 py-3 sm:px-5">88</td>
-                <td class="px-4 py-3 sm:px-5">€10,560</td>
-                <td class="px-4 py-3 sm:px-5">€1,584</td>
-                <td class="px-4 py-3 sm:px-5 text-emerald-300">4.8x</td>
+                <td class="px-4 py-3 sm:px-5">$10,560</td>
+                <td class="px-4 py-3 sm:px-5">$1,584</td>
+                <td class="px-4 py-3 sm:px-5 text-emerald-700">4.8x</td>
               </tr>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-product="C">
                 <td class="px-4 py-3 sm:px-5">Product C</td>
-                <td class="px-4 py-3 sm:px-5">€80</td>
+                <td class="px-4 py-3 sm:px-5">$80</td>
                 <td class="px-4 py-3 sm:px-5">65</td>
-                <td class="px-4 py-3 sm:px-5">€5,200</td>
-                <td class="px-4 py-3 sm:px-5">€780</td>
-                <td class="px-4 py-3 sm:px-5 text-amber-300">3.2x</td>
+                <td class="px-4 py-3 sm:px-5">$5,200</td>
+                <td class="px-4 py-3 sm:px-5">$780</td>
+                <td class="px-4 py-3 sm:px-5 text-amber-700">3.2x</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70">
-          <h3 class="border-b border-slate-800 px-4 py-3 text-sm font-semibold text-white sm:px-5">Platforms Table</h3>
+        <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white/85 shadow-sm">
+          <h3 class="border-b border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 sm:px-5">Platforms Table</h3>
           <table class="min-w-full text-left text-sm">
-            <thead class="bg-slate-950/60 text-slate-300">
+            <thead class="bg-slate-100/80 text-slate-600">
               <tr>
                 <th class="px-4 py-3 sm:px-5">Platform</th>
                 <th class="px-4 py-3 sm:px-5">Reach</th>
@@ -239,39 +317,39 @@
               </tr>
             </thead>
             <tbody>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-platform="instagram">
                 <td class="px-4 py-3 sm:px-5">Instagram</td>
                 <td class="px-4 py-3 sm:px-5">182,000</td>
                 <td class="px-4 py-3 sm:px-5">10.2%</td>
                 <td class="px-4 py-3 sm:px-5">124</td>
-                <td class="px-4 py-3 sm:px-5">€9,920</td>
-                <td class="px-4 py-3 sm:px-5 text-cyan-300">Best engagement</td>
+                <td class="px-4 py-3 sm:px-5">$9,920</td>
+                <td class="px-4 py-3 sm:px-5 text-cyan-700">Best engagement</td>
               </tr>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-platform="tiktok">
                 <td class="px-4 py-3 sm:px-5">TikTok</td>
                 <td class="px-4 py-3 sm:px-5">205,000</td>
                 <td class="px-4 py-3 sm:px-5">9.8%</td>
                 <td class="px-4 py-3 sm:px-5">98</td>
-                <td class="px-4 py-3 sm:px-5">€7,760</td>
-                <td class="px-4 py-3 sm:px-5 text-cyan-300">Best reach</td>
+                <td class="px-4 py-3 sm:px-5">$7,760</td>
+                <td class="px-4 py-3 sm:px-5 text-cyan-700">Best reach</td>
               </tr>
-              <tr class="border-t border-slate-800">
+              <tr class="border-t border-slate-200" data-platform="youtube">
                 <td class="px-4 py-3 sm:px-5">YouTube</td>
                 <td class="px-4 py-3 sm:px-5">65,000</td>
                 <td class="px-4 py-3 sm:px-5">6.5%</td>
                 <td class="px-4 py-3 sm:px-5">51</td>
-                <td class="px-4 py-3 sm:px-5">€4,920</td>
-                <td class="px-4 py-3 sm:px-5 text-cyan-300">Best long-form conv.</td>
+                <td class="px-4 py-3 sm:px-5">$4,920</td>
+                <td class="px-4 py-3 sm:px-5 text-cyan-700">Best long-form conv.</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-          <div class="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-900/70 lg:col-span-2">
-            <h3 class="border-b border-slate-800 px-4 py-3 text-sm font-semibold text-white sm:px-5">Campaigns Table</h3>
+          <div class="overflow-x-auto rounded-2xl border border-slate-200 bg-white/85 shadow-sm lg:col-span-2">
+            <h3 class="border-b border-slate-200 px-4 py-3 text-sm font-semibold text-slate-900 sm:px-5">Campaigns Table</h3>
             <table class="min-w-full text-left text-sm">
-              <thead class="bg-slate-950/60 text-slate-300">
+              <thead class="bg-slate-100/80 text-slate-600">
                 <tr>
                   <th class="px-4 py-3 sm:px-5">Dates</th>
                   <th class="px-4 py-3 sm:px-5">Campaign</th>
@@ -282,80 +360,251 @@
                 </tr>
               </thead>
               <tbody>
-                <tr class="border-t border-slate-800">
+                <tr class="border-t border-slate-200" data-period="30d" data-platform="instagram" data-performance="high" data-products="A,C">
                   <td class="px-4 py-3 sm:px-5">Mar 1-10</td>
                   <td class="px-4 py-3 sm:px-5">Spring Skincare Drop</td>
                   <td class="px-4 py-3 sm:px-5">A + C</td>
                   <td class="px-4 py-3 sm:px-5">Instagram</td>
                   <td class="px-4 py-3 sm:px-5">92 conversions</td>
-                  <td class="px-4 py-3 sm:px-5 text-emerald-300">High</td>
+                  <td class="px-4 py-3 sm:px-5 text-emerald-700">High</td>
                 </tr>
-                <tr class="border-t border-slate-800">
+                <tr class="border-t border-slate-200" data-period="30d" data-platform="tiktok" data-performance="high" data-products="B">
                   <td class="px-4 py-3 sm:px-5">Mar 12-20</td>
                   <td class="px-4 py-3 sm:px-5">Creator Tech Week</td>
                   <td class="px-4 py-3 sm:px-5">B</td>
                   <td class="px-4 py-3 sm:px-5">TikTok</td>
                   <td class="px-4 py-3 sm:px-5">77 conversions</td>
-                  <td class="px-4 py-3 sm:px-5 text-emerald-300">High</td>
+                  <td class="px-4 py-3 sm:px-5 text-emerald-700">High</td>
                 </tr>
-                <tr class="border-t border-slate-800">
+                <tr class="border-t border-slate-200" data-period="7d" data-platform="youtube" data-performance="medium" data-products="B,C">
                   <td class="px-4 py-3 sm:px-5">Mar 21-30</td>
                   <td class="px-4 py-3 sm:px-5">Premium Bundle Review</td>
                   <td class="px-4 py-3 sm:px-5">B + C</td>
                   <td class="px-4 py-3 sm:px-5">YouTube</td>
                   <td class="px-4 py-3 sm:px-5">45 conversions</td>
-                  <td class="px-4 py-3 sm:px-5 text-amber-300">Medium</td>
+                  <td class="px-4 py-3 sm:px-5 text-amber-700">Medium</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <aside class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-            <h3 class="text-sm font-semibold text-white">Alerts</h3>
+          <aside class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+            <h3 class="text-sm font-semibold text-slate-900">Alerts</h3>
             <ul class="mt-3 space-y-2 text-sm">
-              <li class="rounded-lg border border-rose-400/30 bg-rose-500/10 p-3 text-rose-200">Conversion drop: YouTube ads down 18% in the last 7 days.</li>
-              <li class="rounded-lg border border-emerald-400/30 bg-emerald-500/10 p-3 text-emerald-200">Spike detected: Product B conversions up 22% after creator testimonial.</li>
-              <li class="rounded-lg border border-amber-400/30 bg-amber-500/10 p-3 text-amber-200">Anomaly: CPC increased 16% on TikTok over weekend traffic.</li>
+              <li class="rounded-lg border border-rose-300 bg-rose-50 p-3 text-rose-700">Conversion drop: YouTube ads down 18% in the last 7 days.</li>
+              <li class="rounded-lg border border-emerald-300 bg-emerald-50 p-3 text-emerald-700">Spike detected: Product B conversions up 22% after creator testimonial.</li>
+              <li class="rounded-lg border border-amber-300 bg-amber-50 p-3 text-amber-700">Anomaly: CPC increased 16% on TikTok over weekend traffic.</li>
             </ul>
           </aside>
         </div>
 
-        <section aria-labelledby="top-lists" class="rounded-2xl border border-slate-800 bg-slate-900/70 p-4">
-          <h3 id="top-lists" class="text-sm font-semibold text-white">Lists With Filters</h3>
+        <section aria-labelledby="top-lists" class="rounded-2xl border border-slate-200 bg-white/85 shadow-sm p-4">
+          <h3 id="top-lists" class="text-sm font-semibold text-slate-900">Lists With Filters</h3>
           <div class="mt-3 flex flex-wrap gap-2 text-xs">
-            <span class="rounded-full border border-slate-700 px-3 py-1 text-slate-300">Filter: Last 7 days</span>
-            <span class="rounded-full border border-slate-700 px-3 py-1 text-slate-300">Filter: Platform</span>
-            <span class="rounded-full border border-slate-700 px-3 py-1 text-slate-300">Filter: Product</span>
-            <span class="rounded-full border border-slate-700 px-3 py-1 text-slate-300">Filter: Campaign Type</span>
+            <button type="button" data-filter="period7d" class="filter-chip rounded-full border border-slate-300 px-3 py-1 text-slate-600 transition hover:bg-slate-100">Last 7 days</button>
+            <button type="button" data-filter="platformTop" class="filter-chip rounded-full border border-slate-300 px-3 py-1 text-slate-600 transition hover:bg-slate-100">Top platform only</button>
+            <button type="button" data-filter="productTop" class="filter-chip rounded-full border border-slate-300 px-3 py-1 text-slate-600 transition hover:bg-slate-100">Top product only</button>
+            <button type="button" data-filter="campaignHigh" class="filter-chip rounded-full border border-slate-300 px-3 py-1 text-slate-600 transition hover:bg-slate-100">High campaigns only</button>
+            <button type="button" data-filter="reset" class="rounded-full border border-cyan-200 bg-cyan-50 px-3 py-1 text-cyan-700 transition hover:bg-cyan-100">Reset filters</button>
           </div>
           <div class="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
-            <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm">
-              <h4 class="font-medium text-cyan-200">Top Products</h4>
-              <p class="mt-2 text-slate-300">1. Product B</p>
-              <p class="text-slate-300">2. Product A</p>
-              <p class="text-slate-300">3. Product C</p>
+            <article class="rounded-xl border border-slate-200 bg-white/75 p-3 text-sm">
+              <h4 class="font-medium text-cyan-700">Top Products</h4>
+              <p class="mt-2 text-slate-600">1. Product B</p>
+              <p class="text-slate-600">2. Product A</p>
+              <p class="text-slate-600">3. Product C</p>
             </article>
-            <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm">
-              <h4 class="font-medium text-amber-200">Top Platforms</h4>
-              <p class="mt-2 text-slate-300">1. Instagram (ROI)</p>
-              <p class="text-slate-300">2. TikTok (Reach)</p>
-              <p class="text-slate-300">3. YouTube (AOV)</p>
+            <article class="rounded-xl border border-slate-200 bg-white/75 p-3 text-sm">
+              <h4 class="font-medium text-amber-700">Top Platforms</h4>
+              <p class="mt-2 text-slate-600">1. Instagram (ROI)</p>
+              <p class="text-slate-600">2. TikTok (Reach)</p>
+              <p class="text-slate-600">3. YouTube (AOV)</p>
             </article>
-            <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm">
-              <h4 class="font-medium text-emerald-200">Top Campaigns</h4>
-              <p class="mt-2 text-slate-300">1. Spring Skincare Drop</p>
-              <p class="text-slate-300">2. Creator Tech Week</p>
-              <p class="text-slate-300">3. Premium Bundle Review</p>
+            <article class="rounded-xl border border-slate-200 bg-white/75 p-3 text-sm">
+              <h4 class="font-medium text-emerald-700">Top Campaigns</h4>
+              <p class="mt-2 text-slate-600">1. Spring Skincare Drop</p>
+              <p class="text-slate-600">2. Creator Tech Week</p>
+              <p class="text-slate-600">3. Premium Bundle Review</p>
             </article>
-            <article class="rounded-xl border border-slate-800 bg-slate-950/60 p-3 text-sm">
-              <h4 class="font-medium text-white">Improvement Opportunities</h4>
-              <p class="mt-2 text-slate-300">1. Improve YouTube CTA placement.</p>
-              <p class="text-slate-300">2. Reduce TikTok CPC on weekends.</p>
-              <p class="text-slate-300">3. Replicate Product B testimonial format.</p>
+            <article class="rounded-xl border border-slate-200 bg-white/75 p-3 text-sm">
+              <h4 class="font-medium text-slate-900">Improvement Opportunities</h4>
+              <p class="mt-2 text-slate-600">1. Improve YouTube CTA placement.</p>
+              <p class="text-slate-600">2. Reduce TikTok CPC on weekends.</p>
+              <p class="text-slate-600">3. Replicate Product B testimonial format.</p>
             </article>
           </div>
         </section>
       </section>
     </main>
+
+    <nav aria-label="Mobile quick navigation" class="fixed inset-x-0 bottom-0 z-50 border-t border-slate-200 bg-white/90 px-3 py-2 backdrop-blur-lg sm:hidden">
+      <ul class="mx-auto grid max-w-md grid-cols-5 gap-1 text-xs">
+        <li>
+          <a href="#kpis" class="flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-cyan-700 hover:bg-cyan-50">
+            <span class="text-lg leading-none">🏠</span>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#drivers" class="flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-slate-600 hover:bg-slate-100">
+            <span class="text-lg leading-none">📈</span>
+            <span>Insights</span>
+          </a>
+        </li>
+        <li>
+          <a href="#operations" class="flex flex-col items-center gap-1 rounded-xl bg-cyan-600 px-2 py-2 font-medium text-white shadow-sm shadow-cyan-200">
+            <span class="text-lg leading-none">＋</span>
+            <span>Reports</span>
+          </a>
+        </li>
+        <li>
+          <a href="#operations" class="flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-slate-600 hover:bg-slate-100">
+            <span class="text-lg leading-none">🔔</span>
+            <span>Alerts</span>
+          </a>
+        </li>
+        <li>
+          <a href="#top-lists" class="flex flex-col items-center gap-1 rounded-xl px-2 py-2 text-slate-600 hover:bg-slate-100">
+            <span class="text-lg leading-none">👤</span>
+            <span>Profile</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script>
+      const kpiData = {
+        '30d': {
+          label: 'Showing: Last 30 days',
+          commissionRevenue: { value: '$3,390', sub: '+14% vs previous period' },
+          totalSales: { value: '273', sub: 'A: 120 | B: 88 | C: 65' },
+          conversionRate: { value: '2.6%', sub: 'Conversions / Reach' },
+          overallRoi: { value: '4.1x', sub: 'Revenue $22,600 / Cost $5,470' },
+          engagementRate: { value: '8.9%', sub: 'Likes + comments + shares / reach' },
+          ctr: { value: '3.7%', sub: 'Strong on short-form videos' },
+          funnelCompletion: { value: '61%', sub: 'Click to checkout completion rate' },
+          costPerConversion: { value: '$20.04', sub: 'Efficiency benchmark stable' },
+        },
+        '7d': {
+          label: 'Showing: Last 7 days',
+          commissionRevenue: { value: '$812', sub: '+6% vs previous period' },
+          totalSales: { value: '67', sub: 'A: 28 | B: 25 | C: 14' },
+          conversionRate: { value: '2.3%', sub: 'Conversions / Reach' },
+          overallRoi: { value: '3.8x', sub: 'Revenue $5,360 / Cost $1,410' },
+          engagementRate: { value: '8.1%', sub: 'Likes + comments + shares / reach' },
+          ctr: { value: '3.4%', sub: 'Stable short-form performance' },
+          funnelCompletion: { value: '58%', sub: 'Click to checkout completion rate' },
+          costPerConversion: { value: '$21.04', sub: 'Slightly above monthly benchmark' },
+        },
+        '1d': {
+          label: 'Showing: Last 1 day',
+          commissionRevenue: { value: '$138', sub: '+3% vs previous day' },
+          totalSales: { value: '11', sub: 'A: 5 | B: 4 | C: 2' },
+          conversionRate: { value: '1.9%', sub: 'Conversions / Reach' },
+          overallRoi: { value: '3.1x', sub: 'Revenue $880 / Cost $284' },
+          engagementRate: { value: '7.4%', sub: 'Likes + comments + shares / reach' },
+          ctr: { value: '3.0%', sub: 'Watch hook under optimization' },
+          funnelCompletion: { value: '53%', sub: 'Click to checkout completion rate' },
+          costPerConversion: { value: '$25.82', sub: 'Monitor if this trend persists' },
+        },
+      };
+
+      const kpiRangeButtons = Array.from(document.querySelectorAll('.kpi-range-btn'));
+      const kpiRangeLabel = document.getElementById('kpi-range-label');
+
+      function applyKpiRange(rangeKey) {
+        const next = kpiData[rangeKey];
+        if (!next) return;
+
+        Object.entries(next).forEach(([key, data]) => {
+          if (key === 'label') return;
+          const valueEl = document.querySelector(`[data-kpi-value="${key}"]`);
+          const subEl = document.querySelector(`[data-kpi-sub="${key}"]`);
+          if (valueEl) valueEl.textContent = data.value;
+          if (subEl) subEl.textContent = data.sub;
+        });
+
+        if (kpiRangeLabel) {
+          kpiRangeLabel.textContent = next.label;
+        }
+
+        kpiRangeButtons.forEach((btn) => {
+          const isActive = btn.dataset.kpiRange === rangeKey;
+          btn.classList.toggle('border-cyan-300', isActive);
+          btn.classList.toggle('bg-cyan-100', isActive);
+          btn.classList.toggle('text-cyan-700', isActive);
+          btn.classList.toggle('border-slate-300', !isActive);
+          btn.classList.toggle('bg-white', !isActive);
+          btn.classList.toggle('text-slate-600', !isActive);
+        });
+      }
+
+      kpiRangeButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          applyKpiRange(btn.dataset.kpiRange);
+        });
+      });
+
+      const filterState = {
+        period7d: false,
+        platformTop: false,
+        productTop: false,
+        campaignHigh: false,
+      };
+
+      const productsRows = Array.from(document.querySelectorAll('tr[data-product]'));
+      const platformRows = Array.from(document.querySelectorAll('tr[data-platform]')).filter((row) => row.closest('table')?.previousElementSibling?.textContent?.includes('Platforms Table'));
+      const campaignRows = Array.from(document.querySelectorAll('tr[data-period]'));
+      const filterChips = Array.from(document.querySelectorAll('.filter-chip'));
+      const resetBtn = document.querySelector('button[data-filter="reset"]');
+
+      function updateChipStyles() {
+        filterChips.forEach((chip) => {
+          const key = chip.dataset.filter;
+          const active = filterState[key];
+          chip.classList.toggle('bg-cyan-100', !!active);
+          chip.classList.toggle('border-cyan-300', !!active);
+          chip.classList.toggle('text-cyan-700', !!active);
+        });
+      }
+
+      function applyFilters() {
+        productsRows.forEach((row) => {
+          const isTopProduct = row.dataset.product === 'B';
+          row.style.display = filterState.productTop && !isTopProduct ? 'none' : '';
+        });
+
+        platformRows.forEach((row) => {
+          const isTopPlatform = row.dataset.platform === 'instagram';
+          row.style.display = filterState.platformTop && !isTopPlatform ? 'none' : '';
+        });
+
+        campaignRows.forEach((row) => {
+          const periodPass = !filterState.period7d || row.dataset.period === '7d';
+          const performancePass = !filterState.campaignHigh || row.dataset.performance === 'high';
+          row.style.display = periodPass && performancePass ? '' : 'none';
+        });
+
+        updateChipStyles();
+      }
+
+      filterChips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const key = chip.dataset.filter;
+          filterState[key] = !filterState[key];
+          applyFilters();
+        });
+      });
+
+      resetBtn?.addEventListener('click', () => {
+        Object.keys(filterState).forEach((key) => {
+          filterState[key] = false;
+        });
+        applyFilters();
+      });
+
+      applyKpiRange('30d');
+    </script>
   </body>
 </html>
+
